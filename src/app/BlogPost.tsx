@@ -16,7 +16,7 @@ export default function BlogPost({ title, content, image }: BlogPostProps) {
         </div>
       )}
       <h2 className={styles.title}>{title}</h2>
-      <p className={styles.content}>{content}</p>
+      <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />
     </article>
   );
 } 
