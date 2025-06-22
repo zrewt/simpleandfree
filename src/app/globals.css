@@ -1,12 +1,18 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f8f3;
+  --foreground: #228B22; /* green */
+  --accent-brown: #8d6748;
+  --accent-green: #228B22;
+  --accent-white: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #222d22;
+    --foreground: #e0e0d1;
+    --accent-brown: #a98c6d;
+    --accent-green: #4caf50;
+    --accent-white: #222d22;
   }
 }
 
@@ -31,7 +37,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--accent-green);
   text-decoration: none;
 }
 
